@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MainLayout">
+
+
+
+    <Button
+        android:id="@+id/idFrameAnimation"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Frame Animation"
+        app:layout_constraintBottom_toTopOf="@+id/idTweenAnimation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/idTweenAnimation"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Tween Animation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/idFrameAnimation"
+        app:layout_constraintStart_toStartOf="@+id/idFrameAnimation" />
+
+    <ImageView
+        android:id="@+id/View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/animation_loading"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
